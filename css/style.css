@@ -1,12 +1,19 @@
 
 :root{
-  --color-gray-1: #CCCCCC;
+    --color-theme:#82D8C6;
+    --color-theme-light:#d7faf7;
+    --color-theme-dark-1:#0E153D;
+    --color-dark:#080C24;
+    --color-white:#FFFFFF;
+    --color-grey-0:#AAAAAA;
+    --color-gray-1: #CCCCCC;
     --color-gray-2: #E3E3E3 ;
     --color-gray-3: #EEEEEE;
     --color-gray-4:#F6F6F6;
     --color-product-instock: #82D8C6;
     --color-product-outofstock:#FE6C6C;
-    --color-theme:yellow;
+   
+    
 
     --font-play: 'Play', sans-serif;
     --font-roboto:'Roboto', sans-serif;
@@ -34,12 +41,25 @@ html, body  {
 /*top-menu*/
 .top-menu {
   background-color: var(--color-theme); 
+  color: var(--color-white);
+  
 }
 
 .top-menu .container {
+  height: 100%;
   display:flex;
   justify-content: space-between;
   align-items: center;
 }
+.top-menu .menu-links {
 
+}
+.top-menu a{
+  color:var(--color-theme-dark);
+  text-decoration: none;
+  margin: 1rem;
 
+}
+.top-menu a:hover{
+  color:var(--color-theme-dark);
+}
