@@ -6,6 +6,7 @@
     --color-gray-4:#F6F6F6;
     --color-product-instock: #82D8C6;
     --color-product-outofstock:#FE6C6C;
+    --color-theme:yellow;
 
     --font-play: 'Play', sans-serif;
     --font-roboto:'Roboto', sans-serif;
@@ -35,6 +36,10 @@ html, body  {
   background-color: var(--color-theme); 
 }
 
-
+.top-menu .container {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
