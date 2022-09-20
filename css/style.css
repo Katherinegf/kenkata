@@ -231,6 +231,32 @@ html, body {
             align-items: center;
             }
 
+            /*showcase*/
+
+            .showcase {
+              background-color: var(--color-gray-3);
+            }
+            .showcase .container{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+           
+            .showcase .showcase-body h1 {
+              font-family: var(--font-play);
+              font-size: var(--font-size-60);
+              }
+
+              .showcase .showcase-body h1 strong {
+                font-weight: var(--font-weight-bold);
+                 color: var(--color-theme);
+              }
+
+              .showcase img {
+                display:;
+              }
+
+
 
   
  /* .top.menu .menu-links {
