@@ -56,6 +56,19 @@ html, body {
         color:var(--color-white);
     }
 
+    .btn-white {
+      background-color: var(--color-white);
+      color:var(--color-theme);
+      border-radius:var(--border-radius-medium);
+      font-weight: var(--font-weight-medium);
+      padding-left: 1.75rem;
+      padding-left: 1.75rem;
+  }
+  .btn-white:hover{
+      background-color: var(--color-theme-dark);
+      color:var(--color-white);
+  }
+
 
 
 /*top-menu*/
@@ -235,26 +248,117 @@ html, body {
 
             .showcase {
               background-color: var(--color-gray-3);
+              
             }
             .showcase .container{
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
+              text-align: center;
+              padding-top: 2.4rem;
+              padding-bottom: 2.4;
+              
+             
             }
-           
             .showcase .showcase-body h1 {
+              font-size: 3.5rem;
               font-family: var(--font-play);
-              font-size: var(--font-size-60);
-              }
+             }
 
               .showcase .showcase-body h1 strong {
                 font-weight: var(--font-weight-bold);
                  color: var(--color-theme);
               }
-
-              .showcase img {
-                display:;
+              .showcase .showcase-body p {
+               margin: 2rem o;
               }
+              .showcase img {
+                display: none;
+              }
+
+              /*webshop-info*/
+              .webshop-info {
+                padding: 4rem 0; /*marginal som gör att den flyttas ner från toppen*/
+
+              }
+              .webshop-info .container { /*fluid gör att de sprids men kan istället sätta max-width*/
+                max-width: 1600px;
+                display: flex; 
+                justify-content: space-evenly; /*får de jämt utsprida*/
+              }
+              .webshop-info .info-box {
+                margin: 0 2rem; /*Gör att de inte sitter ihop*/
+                flex:1;
+              }
+
+            
+
+           
+          
+
+              @media (min-weidth: 578px){
+              .top-menu .menu-links {
+                display: block;
+              }
+
+              .top-menu > .container  {
+                justify-content: space-between;
+              }
+            
+            }
+
+              @media (min-width: 768px) {
+                .showcase .showcase-body h1 {
+                  font-size: var(--font-size-60);
+                  font-family: var(--font-play)
+                  
+                 }
+    
+                  .showcase .showcase-body h1 strong {
+                    display: block;
+                   
+                  }
+    
+                  .showcase showcase-body a {
+                   
+                  }
+                
+              }
+
+              @media (min-width: 992px) {
+              .top-menu .menu-links .links {
+                display: inline;
+              }
+              .showcase .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: left;
+                text-align: left;
+                padding-top: 0;
+                padding-bottom: 0;
+                
+              }
+              .showcase img {
+                display: block;
+                width: 50%;
+              }
+            }
+              @media (min-width: 1200px) {
+                .showcase .showcase-body{
+                  flex: 1;
+                  }
+                .showcase .showcase-body p{
+                width: 80%;
+                  
+                }
+
+                .showcase img {
+                 flex: 1;
+                  width: 100%;
+                }
+                
+              }
+              
+
+
+             
 
 
 
