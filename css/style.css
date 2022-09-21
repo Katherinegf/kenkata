@@ -284,9 +284,38 @@ html, body {
                 justify-content: space-evenly; /*får de jämt utsprida*/
               }
               .webshop-info .info-box {
-                margin: 0 2rem; /*Gör att de inte sitter ihop*/
+                background-color: var(--color-theme-light);
+                padding: 1rem; /* så att den inte ligger i kanten*/
+                display: flex;
+                align-items: center;
+                margin: 0 1rem; /*Gör att de inte sitter ihop*/
                 flex:1;
+                border-radius: var(--border-radius-small);/*runda höran*/
               }
+              .webshop-info .info-box:hover {
+                background-color: var(--color-theme);
+                color:var(--color-white)
+                }
+
+              .webshop-info .info-box img {
+                margin-right: 1,5rem;
+              }
+
+              .webshop-info:hover .info-box img {
+                filter: sepia(0%) brightness(1000%); /*ändrar färg*/
+              }
+              .webshop-info .info-box h1{
+                color: var(--color-theme);
+                font-size: 1rem;
+                font-weight:var(--font-weight-medium);
+              }
+                 .webshop-info:hover .info-box h1 {
+                    color: var(--color-white);
+                    }
+                    .webshop-info:hover .info-box h1 {
+                      color: var(--color-white);
+                      }
+  
 
             
 
