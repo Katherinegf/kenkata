@@ -301,18 +301,16 @@ html, body {
                 margin-right: 1,5rem;
               }
 
-              .webshop-info:hover .info-box img {
-                filter: sepia(0%) brightness(1000%); /*ändrar färg*/
+              .webshop-info .info-box:hover img {
+                filter: brightness(1000%); /*ändrar färg*/
               }
               .webshop-info .info-box h1{
                 color: var(--color-theme);
                 font-size: 1rem;
                 font-weight:var(--font-weight-medium);
               }
-                 .webshop-info:hover .info-box h1 {
-                    color: var(--color-white);
-                    }
-                    .webshop-info:hover .info-box h1 {
+                
+                    .webshop-info .info-box:hover h1 {
                       color: var(--color-white);
                       }
   
