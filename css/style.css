@@ -259,6 +259,7 @@ margin: 1rem 0;
             justify-content: space-between;
             align-items: center;
             padding: 0.7rem 1rem;
+            transition: 0.15s ease-in-out;
             }
             .main-menu nav .browse-categories button:hover{
                 background-color: var(--color-theme-dark);
@@ -311,6 +312,8 @@ margin: 1rem 0;
               }
 
               /*webshop-info*/
+
+
               .webshop-info {
                 padding: 4rem 0; /*marginal som gör att den flyttas ner från toppen*/
 
@@ -328,6 +331,7 @@ margin: 1rem 0;
                 margin: 0 1rem; /*Gör att de inte sitter ihop*/
                 flex:1;
                 border-radius: var(--border-radius-small);/*runda höran*/
+                transition: all 0.3s ease-in-out;
               }
               .webshop-info .info-box:hover {
                 background-color: var(--color-theme);
@@ -335,17 +339,22 @@ margin: 1rem 0;
                 }
 
               .webshop-info .info-box img {
-                margin-right: 1,5rem;
+                margin-right: 1.5rem;
+                filter: brightness(100%);
+                transition: all 0.3s ease-in-out;
               }
-
               .webshop-info .info-box:hover img {
                 filter: brightness(1000%); /*ändrar färg*/
               }
+
+            
               .webshop-info .info-box h1{
                 color: var(--color-theme);
                 font-size: 1rem;
                 font-weight:var(--font-weight-medium);
+                transition: all 3s ease-in-out;
               }
+             
                 
                     .webshop-info .info-box:hover h1 {
                       color: var(--color-white);
@@ -382,6 +391,7 @@ margin: 1rem 0;
         padding: 0.5rem 1rem;
         font-weight: var(--font-weight-medium);
         height: 38px;
+        transition: 0.2s ease-in-out;
         }
 
         .shop-by-category .category-box:hover .category-box-title {
@@ -423,6 +433,26 @@ margin: 1rem 0;
         grid-column: 5 /-1;
         grid-row: 3/-1;
        }
+
+       /*New arrivals*/
+
+    .new-arrivals {
+      padding-top: 2rem;
+        }
+
+        .new-arrivals .card{
+          position: relative;
+          height: 400px;
+          width: 350px;
+          }
+
+          .new-arrivals .card .card-body {
+            position: absolute;
+            
+              }
+    
+
+
 
   
 
@@ -493,6 +523,7 @@ margin: 1rem 0;
                 }
                 
               }
+      
               
 
 

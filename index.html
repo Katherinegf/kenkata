@@ -12,7 +12,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-   <header>
+   <header class="d-none">
         <div class="top-menu">
             <div class="container border">
                 <div class="site-settings">
@@ -96,7 +96,7 @@
                 
     </header> 
 
-    <section class="showcase"> <!--d-none är det bara för att man ska slippa dra ner sidan när man kodar, måste bort sen.-->
+    <section class="showcase d-none"> <!--d-none är det bara för att man ska slippa dra ner sidan när man kodar, måste bort sen.-->
         <div class="container">
             <div class="showcase-body">
                 <h1>Shopping is <strong>MORE FUN</strong></h1>
@@ -109,7 +109,7 @@
 
     </section>
 
-    <section class="webshop-info">
+    <section class="webshop-info d-none">
         <div class="container"> <!--Sätt in fluid om du har det i css.style-->
             <div class="info-box">
                 <a href="index.html"><img src="free-shipping-icon.svg" alt="Free shipping"></a>
@@ -143,9 +143,9 @@
         </div>
     </section>
 
-    <section class="shop-by-category">
+    <section class="shop-by-category d-none">
         <div class="container border">
-            <div class="section-title d-none">
+            <div class="section-title">
                 <h1>SHOP BY <span>CATEGORY</span></h1>
                 <a href="index.html"> <img src="wave-line.svg" alt="waveline"></a>
                 <p>We always try to give you the best product within a fast reliable way</p>
@@ -206,8 +206,40 @@
                 <a href="index.html"> <img src="wave-line.svg" alt="waveline"></a>
                 <p>Check out our latest products from top fashion designers</p>
             </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <div class="card h-100"> <!--H-100 används för att få samma storlek-->
+                       <a href="index.html"><img src="placeholder-man-body.png" alt="placeholder image"></a>
+                        <div class="card-body">
+                         <h5 class="card-title">Card title</h5>
+                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                       <a href="index.html"><img src="place-holder-chest.png" alt="placeholder image"></a>
+                        <div class="card-body">
+                         <h5 class="card-title">Card title</h5>
+                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                       <a href="index.html"><img src="placeholder-women.png" alt="placeholder image"></a>
+                        <div class="card-body">
+                         <h5 class="card-title">Card title</h5>
+                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
 
 
     <div style="height:4000px"></div>
