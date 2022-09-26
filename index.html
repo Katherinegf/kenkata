@@ -61,14 +61,16 @@
                         <a class="menu-link" href="#"><i class="fa-regular fa-user"></i> My account </a>
                         <a class="menu-link" href="#"><i class="fa-regular fa-heart"></i></a>
                         <a class="menu-link" href="#"><i class="fa-regular fa-shuffle"></i></a>
-                        <a class="menu-link" href="#"><i class="fa-regular fa-cart-shopping me-2"></i>
-                        <span id="cart-total">€99999.00</span>
+                        <a id="cart" class="menu-link" href="#">
+                            <span class="badge rounded-pill ">99+</span>
+                        <i class="fa-regular fa-cart-shopping me-2"></i>
+                        <span>€99999.00</span>
                         </a>
 
                     </div>
                 </div>
                 <nav>
-                    <div class="container border">
+                    <div class="container">
                         <div class="browse-categories">
                             <div class="dropdown dropdown-theme">
                                     <button class="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,7 +96,7 @@
                 
     </header> 
 
-    <section class="showcase d-none"> <!--d-none är det bara för att man ska slippa dra ner sidan när man kodar, måste bort sen.-->
+    <section class="showcase"> <!--d-none är det bara för att man ska slippa dra ner sidan när man kodar, måste bort sen.-->
         <div class="container">
             <div class="showcase-body">
                 <h1>Shopping is <strong>MORE FUN</strong></h1>
@@ -107,7 +109,7 @@
 
     </section>
 
-    <section class="webshop-info d-none">
+    <section class="webshop-info">
         <div class="container"> <!--Sätt in fluid om du har det i css.style-->
             <div class="info-box">
                 <a href="index.html"><img src="free-shipping-icon.svg" alt="Free shipping"></a>
@@ -150,32 +152,64 @@
             </div>
 
             <div class="grid">
-                <div id="category-box-1" class="category-box">
-                    <div class="category-box-title">Men</div>
-                </div>
-                <div id="category-box-2" class="category-box">
-                    <div class="category-box-title">Women</div>
-                </div>
-                <div id="category-box-3" class="category-box">
-                    <div class="category-box-title">Kids</div>
-                </div>
-                <div id="category-box-4" class="category-box">
-                    <div class="category-box-title">Shoes</div>
-                </div>
-                <div id="category-box-5" class="category-box">
-                    <div class="category-box-title">Hats</div>
-                </div>
-                <div id="category-box-6" class="category-box">
-                    <div class="category-box-title">Sunglasses</div>
-                </div>
-                <div id="category-box-7" class="category-box">
-                    <div class="category-box-title">Watches</div>
-                </div>
+                <a href="#" id="category-box-1" class="category-box">
+                    <div class="category-box-title">
+                        Men
+                        <span>200 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-2" class="category-box">
+                    <div class="category-box-title">
+                        Women
+                        <span>1000 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-3" class="category-box">
+                    <div class="category-box-title">
+                        Kids
+                        <span>500 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-4" class="category-box">
+                    <div class="category-box-title">
+                        Shoes
+                        <span>200 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-5" class="category-box">
+                    <div class="category-box-title">
+                        Hats
+                        <span>30 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-6" class="category-box">
+                    <div class="category-box-title">
+                        Sunglasses
+                        <span>22 products</span>
+                    </div>
+                </a>
+                <a href="#" id="category-box-7" class="category-box">
+                    <div class="category-box-title">
+                        Watches
+                        <span>5 products</span>
+                    </div>
+                </a>
             </div>
 
         </div>
-
     </section>
+
+    <section class="new-arrivals">
+        <div class="container border">
+            <div class="section-title d-none">
+                <h1>NEW <span>ARRIVALS</span></h1>
+                <a href="index.html"> <img src="wave-line.svg" alt="waveline"></a>
+                <p>Check out our latest products from top fashion designers</p>
+            </div>
+        </div>
+    </section>
+
+
     <div style="height:4000px"></div>
 
 
