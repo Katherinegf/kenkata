@@ -731,6 +731,13 @@ margin: 1rem 0;
      color: var(--color-theme);
                        }
 
+/*breadcrumb*/
+.site-title {
+  background-color: #0E153D;
+  opacity: 0.65;
+  color:#FFFFFF
+}
+
                 
                  
                    
