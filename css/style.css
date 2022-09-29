@@ -561,10 +561,11 @@ margin: 1rem 0;
      margin-top: 6rem;
    }
    .offer > .container {
+    text-align:right;
     height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:end;
+    align-items:flex-start;
     
     }
     .offer .card{
@@ -601,12 +602,23 @@ margin: 1rem 0;
       border: none;
       height: 2.5rem;
       width: 50%;
-      border-radius: 2rem;
+      border-radius: 3rem;
                   }
+
     .offer .card-body .button:hover{
       background-color: var(--color-theme-dark);
       color: var(--color-white);
                  }
+    .offer offer-body p {
+      position: relative;
+      margin-top: 3rem;
+      }
+      .offer offer-body button {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        }
+                 
                
 
     /*Featured products*/
@@ -737,7 +749,7 @@ margin: 1rem 0;
       
      
       
-    }
+    
 
    
 
