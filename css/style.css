@@ -82,6 +82,10 @@ html, body {
     color: var(--color-product-outofstock);
   }
 
+  .required {
+    color:var(--color-theme);
+  }
+
 .section-title {
   padding: 3rem 0;
   color: var(--color-theme-dark);
@@ -98,7 +102,18 @@ html, body {
 }
 .section-title p {
 margin: 1rem 0;
- 
+ }
+
+ a {
+  color:var(--color-theme);
+  font-weight: var(--font-weight-regular);
+  text-decoration: none;
+ }
+
+ a:hover{
+ color:var(--color-theme-dark);
+ text-decoration: underline;
+
 }
 
 /*top-menu*/
@@ -732,11 +747,159 @@ margin: 1rem 0;
                        }
 
 /*breadcrumb*/
-.site-title {
-  background-color: #0E153D;
-  opacity: 0.65;
-  color:#FFFFFF
+.site-title{
+  background-color: var(--color-theme-dark-light);
+   color:#FFFFFF;
+   padding-top:3rem; /*gör att det blir mer space på den blåa sidan och att den blir större.*/
+   padding-bottom: 3rem;
+
 }
+.site-title .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+.site-title h1{
+  color:var(--color-theme);
+  font-size:1.5rem;
+  margin: 0;
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-medium);
+}
+.site-title nav ul{
+  display:flex;
+  align-items: center;
+  margin: 0;
+  padding:0;
+  list-style: none;
+  
+}
+.site-title .breadcrumb {
+ list-style: none;
+ margin:0;
+  }
+
+.site-title .breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+.site-title .breadcrumb li+li:before {
+  padding: 0 0.7rem 0 1rem ;
+  color: var(--color-white);
+  content: "/\00a0";
+}
+.site-title .breadcrumb li a {
+  color:var(--color-theme);
+  text-decoration: none;
+}
+.site-title .breadcrumb li a:hover {
+  color:var(--color-theme-light);
+  text-decoration: underline;
+}
+
+
+.signup-signin {
+  margin: 6rem 0;
+}
+.signup-signin .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  align-items: start;
+}
+
+.external-logins {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+  .external-logins .label {
+    background-color: var(--color-gray-4);
+    padding: 0 1rem;
+    z-index: 2;
+  }
+    .external-logins .line {
+      position: absolute;
+      top:10px;
+      left:0;
+      right:0;
+      border: 1px solid var(--color-gray-0);
+      z-index: -1;
+      opacity: 0.5;
+    }
+
+    .external-socialmedia-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2rem;
+    }
+
+   .external-socialmedia-buttons .facebook-button {
+    background-image: url(../);
+
+   }
+    .external-socialmedia-buttons .google-button {
+      background-color: #4285F4;
+      color: #fff;
+      border-radius: 8px;
+    }
+.form-theme .card{
+  padding:1.5rem;
+  border:none;
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-gray-4);
+ 
+}
+
+.form-theme .card .card-body h1{
+  font-family: var(--font-roboto);
+  font-weight: var(--font-weight-medium);
+  color:var(--color-theme-dark); /*överrösta Bootstrap just in case*/
+  font-size: 1.5rem;
+}
+
+.form-theme .card .card-body .card-text{
+  margin:1.5rem 0;
+  line-height: 2;
+}
+ 
+.form-theme .card .card-body .card-text a{
+  
+   font-weight: var(--font-weight-medium);
+  
+}
+
+
+
+.form-theme .card .card-body .card-text.text-small/*slå ihop-hierarisk ordning */{
+  color:var(--color-gray-5);
+  font-size: 0.875rem;
+ }
+ .form-theme form input[type=checkbox] {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+
+ 
+ .form-theme form input /*slå ihop-hierarisk ordning. type=text formaterar allt som har med text att göra*/{
+  display: block; /*inline element så nu fick jag ner den på ny rad*/
+  width: 100%;
+  border:none;
+  border-radius: var(--border-radius-small);
+  padding: 0.6rem 0.9rem;
+  margin:0.3rem 0; /*för att texten ej ska ligga i kant*/
+ }
+ .form-theme input:focus{
+  outline: 0;
+  box-shadow: 0 0 3px 0 var(--color-gray-0);
+}
+
 
                 
                  
