@@ -200,18 +200,18 @@ margin: 1rem 0;
     
 
   /*main-menu*/
+
   .main-menu  {
  background-color: var(--color-white);
  color: var(--color-theme-dark);
   }
 
-
-  .main-menu > .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 2.2rem;
-    padding-bottom: 2.2rem;
+     .main-menu > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2.2rem;
+        padding-bottom: 2.2rem;
   }
 
   .main-menu .brand {
@@ -295,9 +295,7 @@ margin: 1rem 0;
         
         }
 
-
-
-  .main-menu nav {
+   .main-menu nav {
       border: top 1px solid var(--color-gray-2);
       border-bottom: 1px solid var(--color-gray-2);
      }
@@ -342,6 +340,7 @@ margin: 1rem 0;
         align-items: center;
             }
 
+
     /*showcase*/
 
     .showcase {
@@ -371,16 +370,16 @@ margin: 1rem 0;
 
     /*webshop-info*/
 
-
   .webshop-info {
       padding: 4rem 0; /*marginal som gör att den flyttas ner från toppen*/
+    }
 
-      }
   .webshop-info .container { /*fluid gör att de sprids men kan istället sätta max-width*/
       max-width: 1600px;
       display: flex; 
       justify-content: space-evenly; /*får de jämt utsprida*/
        }
+
   .webshop-info .info-box {
         background-color: var(--color-theme-light);
         padding: 1rem; /* så att den inte ligger i kanten*/
@@ -391,6 +390,7 @@ margin: 1rem 0;
         border-radius: var(--border-radius-small);/*runda höran*/
         transition: all 0.3s ease-in-out;
               }
+
   .webshop-info .info-box:hover {
       background-color: var(--color-theme);
       color:var(--color-white)
@@ -401,6 +401,7 @@ margin: 1rem 0;
       filter: brightness(100%);
       transition: all 0.3s ease-in-out;
               }
+
   .webshop-info .info-box:hover img {
       filter: brightness(1000%); /*ändrar färg*/
               }
@@ -413,16 +414,14 @@ margin: 1rem 0;
       transition: all 3s ease-in-out;
               }
              
-                
    .webshop-info .info-box:hover h1 {
       color: var(--color-white);
                       }
 
+
    /* shop-by-category*/
       
-    
-
-  .shop-by-category .grid{
+    .shop-by-category .grid{
       display: grid;
       gap: 0.8rem;
       grid-template-columns: repeat(5, minmax(100px, 249px));
@@ -462,7 +461,6 @@ margin: 1rem 0;
       margin-top: 0.5rem;
         }
 
-
    #category-box-1 {
      grid-column: 1 /2;
      grid-row: 1/2;
@@ -492,6 +490,7 @@ margin: 1rem 0;
       grid-row: 3/-1;
        }
 
+
    /*New arrivals*/
 
   .new-arrivals {
@@ -507,8 +506,7 @@ margin: 1rem 0;
 
   .new-arrivals .card img {
     height: 400px;
-            
-              }
+             }
 
   .new-arrivals .card .card-body {
     position: absolute;
@@ -687,7 +685,6 @@ margin: 1rem 0;
         }
                  
                
-
     /*Featured products*/
 
   .featured-products {
@@ -703,8 +700,7 @@ margin: 1rem 0;
 
   .featured-products .card img {
       height: 400px;
-            
-              }
+             }
 
   .featured-products .card .card-body {
     position: absolute;
@@ -716,9 +712,11 @@ margin: 1rem 0;
     transition: 0.3s ease-in-out;
     font-size: 1rem;
               }
+
   .featured-products .card:hover .card-body{
     height: 40%;
                  }
+
   .featured-products .card .card-body h1{
     font-size: 1.125rem;
     margin-bottom: 1rem;
@@ -744,6 +742,7 @@ margin: 1rem 0;
     text-decoration: line-through;
     margin:0;
                      }
+
   .featured-products .card .card-body .card-discount-price{
     color: var(--color-theme);
     font-weight:var(--font-weight-medium);
@@ -777,6 +776,7 @@ margin: 1rem 0;
     background-color: var(--color-white);
     transition: top 0.5s ease-in-out;
               }
+
   .featured-products .card img {
     height: 400px;
          }
@@ -791,14 +791,18 @@ margin: 1rem 0;
     margin-bottom: 0.3rem;
     font-size: 1.0em;
                      }
+
   .featured-products .card .card-menu li a{
     color: var(--color-gray-0);
                     }
+
   .featured-products .card .card-menu li a:hover{
      color: var(--color-theme);
                        }
 
+
 /*breadcrumb*/
+
 .site-title{
   background-color: var(--color-theme-dark-light);
    color:#FFFFFF;
@@ -810,10 +814,8 @@ margin: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
-
-
+  
 .site-title h1{
   color:var(--color-theme);
   font-size:1.5rem;
@@ -827,8 +829,8 @@ margin: 1rem 0;
   margin: 0;
   padding:0;
   list-style: none;
-  
-}
+  }
+
 .site-title .breadcrumb {
  list-style: none;
  margin:0;
@@ -838,11 +840,13 @@ margin: 1rem 0;
   display: inline;
   font-size: 18px;
 }
+
 .site-title .breadcrumb li+li:before {
   padding: 0 0.7rem 0 1rem ;
   color: var(--color-white);
   content: "/\00a0";
 }
+
 .site-title .breadcrumb li a {
   color:var(--color-theme);
   text-decoration: none;
@@ -856,6 +860,7 @@ margin: 1rem 0;
 .signup-signin {
   margin: 6rem 0;
 }
+
 .signup-signin .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -869,11 +874,13 @@ margin: 1rem 0;
   justify-content: center;
   z-index: 0;
 }
+
   .external-logins .label {
     background-color: var(--color-gray-4);
     padding: 0 1rem;
     z-index: 2;
   }
+
     .external-logins .line {
       position: absolute;
       top:10px;
@@ -888,8 +895,7 @@ margin: 1rem 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 2rem;
-      
-    }
+       }
 
    .external-socialmedia-buttons .facebook-button {
    background-repeat: no-repeat;
@@ -897,11 +903,10 @@ margin: 1rem 0;
    height: 42px;
    width: 235px;
    text-align: left;
-
   }
+
    .external-socialmedia-buttons .google-button button{
     text-align: right;
-   
    }
  
     .external-socialmedia-buttons .google-button{
@@ -911,9 +916,11 @@ margin: 1rem 0;
       width: 235px;
       text-align: right;  
     }
+
     .external-socialmedia-buttons .facebook-button:hover{
       filter: brightness(90%);  
      }
+
     .external-socialmedia-buttons .google-button:hover{
      filter: brightness(90%);  
     }
@@ -922,8 +929,7 @@ margin: 1rem 0;
   padding:1.5rem;
   border:none;
   border-radius: var(--border-radius-small);
-  background-color: var(--color-gray-4);
- 
+  background-color: var(--color-gray-4); 
 }
 
 .form-theme .card .card-body h1{
@@ -940,11 +946,8 @@ margin: 1rem 0;
  
 .form-theme .card .card-body .card-text a{
   
-   font-weight: var(--font-weight-medium);
-  
+   font-weight: var(--font-weight-medium);  
 }
-
-
 
 .form-theme .card .card-body .card-text.text-small/*slå ihop-hierarisk ordning */{
   color:var(--color-gray-5);
@@ -956,8 +959,6 @@ margin: 1rem 0;
   display: inline-block;
 }
 
-
- 
  .form-theme form input /*slå ihop-hierarisk ordning. type=text formaterar allt som har med text att göra*/{
   display: block; /*inline element så nu fick jag ner den på ny rad*/
   width: 100%;
@@ -996,32 +997,29 @@ margin: 1rem 0;
     }
     .flashSale .square:hover{
       background-color: var(--color-theme-dark);
-   
       color: var(--color-white);
       transition:0.8s ease-in-out; 
-     
-     
-
     }
+
     .flashSale .square h1{
      color:var(--color-white);
      font-size: 60px;
      font-family: var(--font-play);
      margin:0;
      padding-top: 2rem;
-     
       }
+
       .flashSale .square h4{
         margin:2rem;
         color:var(--color-white);
         font-size: 24px;
         }
+
         .flashSale .rings{
           display: flex;
           align-items: center;
           margin-right: 5rem;
          }
-
 
         .flashSale .rings .circle{
           position: relative;
@@ -1032,10 +1030,10 @@ margin: 1rem 0;
           width: 100px;
           height: 100px;
           border-radius: 50%;
-         
           background-color: white;
           border:3px dotted var(--color-theme);
           }
+
           .flashSale .rings .circle:hover{
             background-color: var(--color-theme-dark);
             color: var(--color-white);
@@ -1045,31 +1043,22 @@ margin: 1rem 0;
           .flashSale .rings .circle h4{
             margin-top: 1.5rem;
             color: var(--color-theme);
-            font: size 36px; ;
+            font-size: 36px; ;
             font-family: var(--font-weight-medium);
             }
 
             .flashSale .rings .circle p{
               margin-bottom: 1.5rem;
               }
+
               .flashSale  .flashSale-button .btn{
                 position: absolute;
                 top:90%;
                 right: 16.3rem;
-               
-              
-             
-               
-               
                 }
               
-             
-  
-               
-
-         
-
      /*top-sellers*/
+
 .top-sellers {
   padding-top: 2rem;
   font-size: var(--font-size-16);
@@ -1078,8 +1067,8 @@ margin: 1rem 0;
   .top-sellers .container{
     width: 100%;
     height: 50rem;
-
   }   
+
   .top-sellers .grid{
     display: grid;
     gap: 0.7rem;
@@ -1089,7 +1078,6 @@ margin: 1rem 0;
 
 .top-sellers .sellers-box {
     position: relative;
-   
     border-radius: var(--border-radius-small);
     height:100%;
     width: 100%;
@@ -1109,6 +1097,7 @@ margin: 1rem 0;
   height: 38px;
   transition: 0.2s ease-in-out;
       }
+
       .top-sellers .sellers-box .sellers-box-title-1{
         position: absolute; /*flyttar texten med left & right*/
         left: 0;
@@ -1127,6 +1116,7 @@ margin: 1rem 0;
 .top-sellers .sellers-box:hover .sellers-box-title {
     height: 75px;
       }
+
       .top-sellers .sellers-box:hover .sellers-box-title-1 {
         height: 100%;
           }
@@ -1137,15 +1127,13 @@ margin: 1rem 0;
     font-size: 0.8rem;
     margin-top: 0.5rem;
       }
+
       .top-sellers .sellers-box .sellers-box-title-1 span {
         display: block; /*för att den ska hamna under*/
         color: var(--color-white);
         font-size: 0.8rem;
         margin-top: 0.5rem;
           }
-
-
- 
 
  #sellers-box-1{
   background-image: url(../placeholder-man-toppseller.svg);
@@ -1171,8 +1159,7 @@ margin: 1rem 0;
       max-width: 1900px;
       height: 420px;
       margin-top: 6rem;
-      background-color: var(--color-gray-3);
-              
+      background-color: var(--color-gray-3);        
       }
     .subscribe-now .container{
       display: flex;
@@ -1180,34 +1167,33 @@ margin: 1rem 0;
       text-align: center;
       padding-top: 2.4rem;
       padding-bottom: 2.4rem;
-     
         }
-    
              
-             .subscribe-now .single h1 {
-              font-size: 2.2rem;
-              font-family: var(--font-play);
+    .subscribe-now .single h1 {
+        font-size: 2.2rem;
+        font-family: var(--font-play);
                      }
 
    .subscribe-now .single span {
       font-weight: var(--font-weight-bold);
       color: var(--color-theme);
               }
+
     .subscribe-now .single p {
        margin-bottom:2rem;
-       font-size: 1.5;
+       font-size: 1.5px;
           }
          
       .subscribe.now .form-control {
-                width: 1rem;
-                height: 3rem;
-                background: rgba(255, 255, 255, 0.6);
-                border-color: transparent;
-                border-radius: 20px 0 0 20px; 
+            width: 1rem;
+            height: 3rem;
+            background: rgba(255, 255, 255, 0.6);
+            border-color: transparent;
+            border-radius: 20px 0 0 20px; 
               }
                 .subscribe-now .subscribe-now-body .form-control:focus {
                 box-shadow: none;
-                border-color: none; 
+                border: none; 
               }
                 .subscribe-now .btn {
                 min-height: 50px;
@@ -1220,6 +1206,7 @@ margin: 1rem 0;
                   color: var(--color-white);
                   transition: 1s ease-in-out;
                 }
+                
 .text-center{
   text-align: center;
   background-color: #080C24;
